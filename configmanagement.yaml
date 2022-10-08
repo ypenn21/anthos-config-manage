@@ -1,0 +1,17 @@
+apiVersion: v1
+items:
+- apiVersion: configmanagement.gke.io/v1
+  kind: ConfigManagement
+  metadata:
+    finalizers:
+    - operator.configmanagement.gke.io
+    name: config-management
+  spec:
+    clusterName: cluster-1
+    git:
+      policyDir: .
+      proxy: {}
+      secretType: ssh
+      syncBranch: main
+      syncRepo: git@github.com:ypenn21/anthos-config-manage.git
+      syncWait: 2
