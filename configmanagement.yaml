@@ -6,6 +6,8 @@ metadata:
   namespace: config-management-system
 spec:
   clusterName: onprem.k8s.local
+  policyController:
+    enabled: true         
   git:
     syncRepo: git@github.com:ypenn21/anthos-config-manage.git
     syncBranch: main
