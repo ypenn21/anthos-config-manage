@@ -12,5 +12,5 @@ spec:
     syncRepo: git@github.com:ypenn21/anthos-config-manage.git
     syncBranch: main
     secretType: ssh
-    policyDir: "."
+    policyDir: "config"
     syncWait: 2
