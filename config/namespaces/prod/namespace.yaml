@@ -4,4 +4,5 @@ metadata:
   labels:
     istio-injection: enabled
     env: prod
+    myname: yanni
   name: prod
