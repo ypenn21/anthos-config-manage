@@ -3,6 +3,11 @@ kind: Ingress
 metadata:
   name: hello-ingress
 spec:
+  defaultBackend:
+    service:
+      name: nginx-deployment
+      port:
+        number: 80
   rules:
   - http:
       paths:
