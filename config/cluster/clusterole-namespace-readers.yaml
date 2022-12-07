@@ -2,6 +2,8 @@ kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: namespace-readers
+  annotations:
+    configmanagement.gke.io/cluster-selector: select-location-local
 rules:
 - apiGroups: [""]
   resources: ["namespaces"]
