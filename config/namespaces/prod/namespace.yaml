@@ -6,3 +6,5 @@ metadata:
     env: prod
     myname: yanni
   name: prod
+  annotations:
+    configmanagement.gke.io/cluster-selector: select-location-local
