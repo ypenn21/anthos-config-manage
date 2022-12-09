@@ -6,6 +6,7 @@ spec:
   selector:
     matchLabels:
       greeting: hello
+      yanni: test
   replicas: 1
   template:
     metadata:
