@@ -12,7 +12,6 @@ spec:
       labels:
         greeting: hello
         yanni: test
-        anthos-demo: demo-success
     spec:
       containers:
       - name: hello-world
