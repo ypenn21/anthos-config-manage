@@ -8,3 +8,13 @@ spec:
       name: istio-eastwestgateway
       port:
         number: 30809
+  rules:
+  - http:
+      paths:
+      - path: /eastwest
+        pathType: Exact
+        backend:
+          service:
+            name: istio-eastwestgateway
+            port:
+              number: 30809
