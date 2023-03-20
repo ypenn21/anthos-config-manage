@@ -1,0 +1,10 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: eastwest-ingress
+spec:
+  defaultBackend:
+    service:
+      name: istio-eastwestgateway
+      port:
+        number: 30809
