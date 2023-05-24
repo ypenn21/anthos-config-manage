@@ -4,7 +4,7 @@ metadata:
   labels:
     istio-injection: enabled
     env: prod
-    myname: yanni
+    myname: yanni-peng
   name: prod
   annotations:
     configmanagement.gke.io/cluster-selector: select-location-local
